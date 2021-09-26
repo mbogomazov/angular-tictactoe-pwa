@@ -5,8 +5,8 @@
 <h2 *ngIf="gameFinished">Player {{winner}} won the game!</h2>
 <main>
     <app-square
-        *ngFor="let val of squares; let i = index"
-        [value]="val"
+        *ngFor="let square of squares; let i = index"
+        [value]="square"
         (click)="makeMove(i)">
     </app-square>
 </main>
