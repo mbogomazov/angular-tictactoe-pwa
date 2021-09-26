@@ -2,7 +2,7 @@
 
 <button nbButton outline status="danger" (click)="startNewGame()" *ngIf="winner">Start new game</button>
 
-<h2 *ngIf="winner">Player {{winner}} won the game!</h2>
+<h2 *ngIf="gameFinished">Player {{winner}} won the game!</h2>
 <main>
     <app-square
         *ngFor="let val of squares; let i = index"
